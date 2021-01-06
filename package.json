@@ -1,0 +1,22 @@
+{
+  "name": "pixijs-with-typescript",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-prod": "webpack --mode production",
+    "start": "node_modules/.bin/webpack serve --mode=development --content-base ./public",
+    "prettier": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "latest",
+    "awesome-typescript-loader": "latest",
+    "prettier": "latest",
+    "typescript": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  }
+}
