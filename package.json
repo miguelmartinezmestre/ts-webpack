@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@types/node": "latest",
-    "@types/webpack-dev-server": "^3.11.1"
+    "@types/webpack-dev-server": "^3.11.1",
     "awesome-typescript-loader": "latest",
     "cross-env": "^7.0.3",
     "javascript-obfuscator": "^2.10.3",
