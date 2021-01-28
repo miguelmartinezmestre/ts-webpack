@@ -1,31 +1,24 @@
 {
-  "name": "pixijs-with-typescript",
-  "version": "0.0.0",
-  "main": "index.js",
+  "name": "ts-webpack-example",
   "scripts": {
-    "build-prod": "cross-env TS_NODE_PROJECT=\\\"tsconfig-for-webpack-config.json\\\" webpack --mode production",
-    "start": "cross-env TS_NODE_PROJECT=\\\"tsconfig-for-webpack-config.json\\\" node_modules/.bin/webpack serve --mode=development --content-base ./public",
+    "build-prod": "cross-env TS_NODE_PROJECT=\\\"tsconfig-for-webpack-config.json\\\" node_modules/.bin/webpack --config ./webpack.production.ts",
+    "start": "cross-env TS_NODE_PROJECT=\\\"tsconfig-for-webpack-config.json\\\" node_modules/.bin/webpack serve --config ./webpack.dev.ts",
     "prettier": "prettier --write .",
     "type-check": "tsc --noEmit --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "@types/node": "latest",
-    "@types/webpack": "^4.41.26",
-    "@types/webpack-dev-server": "^3.11.1",
+    "@types/webpack-dev-server": "^3.11.1"
     "awesome-typescript-loader": "latest",
     "cross-env": "^7.0.3",
+    "javascript-obfuscator": "^2.10.3",
     "prettier": "latest",
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
     "typescript": "latest",
     "webpack": "latest",
     "webpack-cli": "latest",
-    "webpack-dev-server": "latest"
-  },
-  "dependencies": {
-    "pixi.js": "^5.3.7"
+    "webpack-dev-server": "latest",
+    "webpack-obfuscator": "^3.2.0"
   }
 }

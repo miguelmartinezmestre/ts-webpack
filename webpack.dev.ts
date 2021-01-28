@@ -1,8 +1,12 @@
-import * as path from "path"
+import {Configuration} from "webpack";
+import path from "path";
 import {CheckerPlugin} from "awesome-typescript-loader";
-import * as webpack from "webpack"
 
-const config: webpack.Configuration = {
+const config: Configuration = {
+  mode: "development",
+  devServer: {
+    contentBase: "./public",
+  },
   resolve: { extensions: [".ts", ".js", ".tsx"] },
   entry: path.resolve(__dirname, "src", "index.ts"),
   output: {
