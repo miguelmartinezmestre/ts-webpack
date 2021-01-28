@@ -8,7 +8,7 @@
     "allowJs": true,
     "strict": true,
     "moduleResolution": "Node",
-    "module": "ES6"
+    "module": "ESNext"
   },
   "exclude": ["node_modules"],
   "types": ["node"],

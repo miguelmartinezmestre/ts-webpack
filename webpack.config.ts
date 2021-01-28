@@ -1,8 +1,8 @@
-const path = require("path");
-const { CheckerPlugin } = require("awesome-typescript-loader");
-const webpack = require("webpack")
+import * as path from "path"
+import {CheckerPlugin} from "awesome-typescript-loader";
+import * as webpack from "webpack"
 
- const config = {
+const config: webpack.Configuration = {
   resolve: { extensions: [".ts", ".js", ".tsx"] },
   entry: path.resolve(__dirname, "src", "index.ts"),
   output: {
